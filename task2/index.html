@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Список дел</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div id="todos">
+    <h1>Список дел</h1>
+    <div id="taskAddition">
+        <input id="taskInput" type="text" placeholder="Добавьте задачу" />
+        <button id="taskButton">Добавить</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div id="filter">
+        <div class="marker">
+            <input class="marked" type="checkbox" />
+            <span>Выполненные</span>
+        </div>
+        <div class="marker">
+            <input class="unmarked" type="checkbox" />
+            <span>Невыполненные</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
