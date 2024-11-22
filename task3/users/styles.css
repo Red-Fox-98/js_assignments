@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+#users {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: center;
+}
+
+#usersList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    img{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+    }
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
