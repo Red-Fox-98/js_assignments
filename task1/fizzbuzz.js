@@ -9,4 +9,5 @@ function fizzBuzz() {
         n = ((n + 1) % 3 === 0 && (n + 1) % 5 === 0) ? "FizzBuzz" : (n + 1) % 3 === 0 ? "Fizz" : (n + 1) % 5 === 0 ? "Buzz" : n + 1
     ).join(',');
 }
+
 module.exports = fizzBuzz;

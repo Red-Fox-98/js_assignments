@@ -1,6 +1,7 @@
 const usersList = document.getElementById('usersList');
 const getUsers = document.getElementById('getUsers');
 
+//Загрузка рандомных пользователей
 function fetchRandomUsers() {
     return new Promise(async (resolve, reject) => {
         //отправка запроса на получение данных пользователей

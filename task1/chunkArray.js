@@ -5,4 +5,5 @@ function chunkArray(array, size) {
     }
     return chunks;
 }
+
 module.exports = chunkArray;

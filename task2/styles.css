@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1{
+h1 {
     margin: 0;
 }
 
@@ -14,11 +14,11 @@ h1{
     gap: 20px
 }
 
-#taskAddition{
+#taskAddition {
     display: flex;
 }
 
-#taskList{
+#taskList {
     margin: 0;
 }
 
@@ -44,7 +44,7 @@ ul {
     }
 }
 
-#task{
+#task {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -59,13 +59,13 @@ li {
     align-items: center;
 }
 
-#filter{
+#filter {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.marker{
+.marker {
     display: flex;
     align-items: center;
     gap: 5px;

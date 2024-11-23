@@ -4,6 +4,7 @@ const leftButton = document.getElementById("leftButton");
 const rightButton = document.getElementById("rightButton");
 let currentIndex = 0;
 
+//Загрузка рандомных изображений
 function getRandomImages() {
     return new Promise(async (resolve, reject) => {
         //отправка запроса на получение данных пользователей
@@ -18,7 +19,7 @@ function getRandomImages() {
     })
 }
 
-//обработка движения свайпа
+//Обработка движения свайпа
 function goToSlide(index) {
     if (index < 0) {
         index = 9;
@@ -29,17 +30,17 @@ function goToSlide(index) {
     images.style.transform = `translateX(-${currentIndex * 500}px)`;
 }
 
-//функция свайпа вправо
+//Функция свайпа вправо
 function goToNextSlide() {
     goToSlide(currentIndex + 1);
 }
 
-//функция свайпа влево
+//Функция свайпа влево
 function goToPrevSlide() {
     goToSlide(currentIndex - 1);
 }
 
-//вывод рандомных фотографий
+//Вывод рандомных фотографий
 random.addEventListener("click", () => {
     getRandomImages().then((data) => {
         images.innerHTML = "";
@@ -58,8 +59,10 @@ random.addEventListener("click", () => {
     })
 })
 
+//Свайп влево
 leftButton.addEventListener("click", goToPrevSlide);
+//Свайп вправо
 rightButton.addEventListener("click", goToNextSlide);
 
-//запуск свайпа черезе определенное время
+//Запуск свайпа черезе определенное время
 setInterval(goToNextSlide, 3000);

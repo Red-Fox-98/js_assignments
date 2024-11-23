@@ -9,7 +9,7 @@ test('add a = 5 b = 4 to equal 1', () => {
 });
 
 test('add a = 5 b = 4 to equal 20', () => {
-    expect(new calculator().multiply(5,4)).toBe(20);
+    expect(new calculator().multiply(5, 4)).toBe(20);
 });
 
 test('add a = 20 b = 4 to equal 5', () => {

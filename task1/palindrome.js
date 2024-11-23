@@ -8,4 +8,5 @@ function isPalindrome(str) {
     const line = str.replaceAll(" ", "").toLowerCase();
     return line === line.split("").reverse().join("");
 }
+
 module.exports = isPalindrome;

@@ -38,16 +38,5 @@ class Library {
     }
 }
 
-const book1 = new Book('Биология', 'Горелова Марина Петровна', 2770922769);
-const book2 = new Book('Математика', 'Смирнова Анна Макаровна', 7843672087);
-const book3 = new Book('Физика', 'Егорова Милана Ярославовна', 2088528350);
-
-const library = new Library();
-library.addBook(book1);
-library.addBook(book2);
-library.addBook(book3);
-console.log(library.listAvailableBooks());
-library.borrowBook(7843672087);
-console.log(library.listAvailableBooks());
-library.returnBook(7843672087);
-console.log(library.listAvailableBooks());
+module.exports.Book = Book;
+module.exports.Library = Library;
