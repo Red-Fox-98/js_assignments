@@ -19,6 +19,10 @@ test("addBook", () => {
     }).toThrow();
 })
 
+test("listAvailableBooks", () => {
+    expect(lib.listAvailableBooks().length).toBe(lib.books.filter((book) => book.isAvailable).length);
+})
+
 test("borrowBook", () => {
     lib.borrowBook(7843672087);
     expect(lib.listAvailableBooks().length).toBe(1);
@@ -27,8 +31,4 @@ test("borrowBook", () => {
 test("returnBook", () => {
     lib.returnBook(7843672087);
     expect(lib.listAvailableBooks().length).toBe(2);
-})
-
-test("listAvailableBooks", () => {
-    expect(lib.listAvailableBooks().length).toBe(lib.books.filter((book) => book.isAvailable).length);
 })
