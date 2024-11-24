@@ -29,6 +29,6 @@ test("returnBook", () => {
     expect(lib.listAvailableBooks().length).toBe(2);
 })
 
-test("listAvailableBooksBook", () => {
+test("listAvailableBooks", () => {
     expect(lib.listAvailableBooks().length).toBe(lib.books.filter((book) => book.isAvailable).length);
 })
